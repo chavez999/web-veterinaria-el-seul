@@ -3,6 +3,7 @@
     .servicio-f{
         width: 100% !important;
         text-align: center;
+        box-shadow: 5;
     }
     
 #informacion{
@@ -26,9 +27,10 @@
 }*/
 
 body{
-    background-image: linear-gradient(135deg,
-    #20BF55,#01BAEF);
+   background-color: azure;
     background-size: auto;
+    
+    
 }
 
 .color-background{
@@ -37,4 +39,16 @@ body{
 
 #informacion{
     position: relative;
+}
+
+.servicio-f:hover {
+    background-color: #b2b2b2;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 15px;
+
+}
+
+div {
+    border-radius: 14px;
 }

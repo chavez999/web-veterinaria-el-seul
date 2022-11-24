@@ -4,44 +4,60 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <title>Bootstrap demo</title>
+    <title>Veterinaria Xolotlán</title>
     <link rel="stylesheet" href="/styles/index.css">
   </head>
   <body>
-    <header class="container-fluid d-flex justify-content-center">
-        <h4 class="text-dark fs-5 mb-0 p-2">
+    <header class="">
+      <header class="p-3 bg-dark text-white">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+
+            <div class="ml-3 justify-content-center">
+              <h4 class="text-white bold fs-5 mb-0 p-2">
+                Clínica Veterinaria Xolotlán de Tipitapa
+            </h4>
+            </div>
+              <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+    
+            <form class="col-16 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+              <input type="search" class="form-control form-control-dark" placeholder="Buscar Cliente..." aria-label="Search">
+            </form>
+    
+            <div class="text-end d-flex justify-content-end">
+              <button type="button" class="btn btn-outline-light me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg></button>
+            </div>
+          </div>
+        </div>
+      </header>  
+      <!-- <h4 class="text-dark fs-5 mb-0 p-2">
             Clínica Veterinaria Xolotlán de Tipitapa
-        </h4>
+        </h4> -->
     </header>
 
-    <!--Barra de busqueda de clientes-->
-    <nav class="navbar">
-        <div  class="container-fluid d-flex justify-content-center">
-            <form>
-                <h5>
-                    Buscar Cliente
-                </h5>
-            </form>
-        </div>
-        <div class="container-fluid d-flex justify-content-center">
-          <form  class="d-flex justify-content-center" role="search">
-            <input class="form-control me-2" type="search" placeholder="Cedula" aria-label="Search">
-            <button class="btn btn-outline-dark" type="*">Buscar</button>
-          </form>
-        </div>
-      </nav>
-
-      <section class="w-50 mx-auto text-center" id="title">
-        <h1 class="p-3 fs-2 border-top border-3">
-          Comprometidos con el cuidado de tu mejor compañero
+      <section class="w-50 mx-auto text-center m-5" id="title">
+        <h1 class="mb-3 fw-semibold">
+          Comprometidos con el Cuidado de tu Mejor Amigo
           <span class="text-dark fw-lighter">Servicios Veterinarios</span>
         </h1>
       </section>
 
       <!--Servicios-->
       <section class="container-fluid">
-        <div class="row w-75 mx-auto servicio-f ">
-          <div class="shadow col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-3 icono-w">
+        <div class="row w-75 mx-auto">
+          <div 
+          class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-3 icono-w shadow servicio-f"
+          onclick="location.href='Clientes.HTML'">
             <img src="https://cdn-icons-png.flaticon.com/512/1320/1320933.png" alt="Mascotas"
              width="180" height="160" >
           <div>
@@ -50,7 +66,7 @@
         </div>
         </div>
         <!---->
-        <div class="shadow col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-3 icono-w">
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-3 icono-w shadow servicio-f">
           <img src="https://cdn-icons-png.flaticon.com/512/2456/2456826.png" alt="Mascotas"
            width="180" height="160" >
         <div>
@@ -62,8 +78,8 @@
         </div>
 
       <!---->
-      <div class="row w-75 mx-auto servicio-f ">
-      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-3 icono-w">
+      <div class="row w-75 mx-auto">
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-3 icono-w shadow servicio-f">
         <img src="https://cdn-icons-png.flaticon.com/512/603/603226.png" alt="Productos"
          width="180" height="160" >
       <div>
@@ -72,19 +88,20 @@
     </div>
     </div>
     <!---->
-    <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-3 icono-w">
+    <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-3 icono-w shadow servicio-f"
+    onclick="location.href='mascotas.html'">
       <img src="https://cdn-icons-png.flaticon.com/512/3047/3047928.png" alt="Mascotas"
        width="180" height="160" >
     <div>
-    <h3 class="fs-5 mt-4 px-4 pb-1" type="button" onclick="location.href='mascotas.html'"> Mascotas</h3>
+    <h3 class="fs-5 mt-4 px-4 pb-1" type="button"> Mascotas</h3>
     <p class="px-4">Gestion de pacientes</p>
   </div>
   </div>
     </div>
 
     <!---->
-    <div class="row w-75 mx-auto servicio-f ">
-      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-3 icono-w">
+    <div class="row w-75 mx-auto">
+      <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-3 icono-w shadow servicio-f">
         <img src="https://cdn-icons-png.flaticon.com/512/2138/2138473.png" alt="Mascotas"
          width="180" height="160" >
       <div>
@@ -93,7 +110,7 @@
     </div>
     </div>
     <!---->
-    <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-3 icono-w">
+    <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-3 icono-w shadow servicio-f">
       <img src="https://cdn-icons-png.flaticon.com/512/2138/2138365.png" alt="Mascotas"
        width="180" height="160" >
     <div>
@@ -113,20 +130,26 @@
         d="M0,128L20,160C40,192,80,256,120,272C160,288,200,256,240,218.7C280,181,320,139,360,128C400,117,440,139,480,133.3C520,128,560,96,600,90.7C640,85,680,107,720,149.3C760,192,800,256,840,245.3C880,235,920,149,960,138.7C1000,128,1040,192,1080,208C1120,224,1160,192,1200,192C1240,192,1280,224,1320,208C1360,192,1400,128,1420,96L1440,64L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z">
       </path></svg>
     </div>
-    <section class="w-100 mx-auto text-center color-background" id="title">
-      <h3>
+    <section class="w-100 mx-auto text-center color-background"  id="title">
+      <div class="p-10">
+      <h3 class="">
         UNIVERSIDAD NACIONAL DE INGENIERIA
       </h3>
-      <h4>
+      <h4 class="">
         Ingenieria En Computación 
       </h4>
-      <h6>
+      <h6 class="">
         Desarrollado por estudiantes
       </h6>
+      <hr class="border-none">
+    </div>
     </section>
   </section>
 
       
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>
 </html>
