@@ -15,7 +15,13 @@
 <body>
 
   <div class="container">
-    <h1>Gestión de Clientes</h1>
+    <div class="d-flex justify-content-center align-items-center pb-4">
+      <h1>Gestión de Clientes</h1>
+    </div>
+    <div class="d-flex justify-content-center align-items-center pb-5">
+      <img src="https://cdn-icons-png.flaticon.com/512/603/603226.png" alt="Productos"
+         width="180" height="160" >
+    </div>
     <table class="table table-striped">
       <thead>
         <tr>
@@ -30,10 +36,63 @@
       <tbody id="datos">
       </tbody>
     </table>
-    <button type="button" id="btnAgregar" class="btn btn-success">Agregar</button>
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter" >Agregar</button>
     <hr>
     <button type="button" id="btnFinalizar" class="btn btn-success">Finalizar</button>
   </div>
+
+  <!-- CARGANDO MODAL -->
+  <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Agregar Cliente</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- inputs del modal agregar cliente -->
+        <form action="" class="">
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="exampleInputPassword1">Nombre:</label>
+                <input type="text" class="form-control" id="" placeholder="Nombre">
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="exampleInputPassword1">Apellido:</label>
+                <input type="text" class="form-control" id="" placeholder="Apellido">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="exampleInputPassword1">Cedula:</label>
+                <input type="text" class="form-control" id="" placeholder="000-000000-0000X">
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="exampleInputPassword1">Correo Electronico:</label>
+                <input type="email" class="form-control" id="" placeholder="pedro.suarez@gmail.com">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- -------------- -->
 
 
   <div class="modal fade" id="ModalEditar" tabindex="-1" role="dialog">
@@ -42,7 +101,7 @@
         <div class="modal-header">
 
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="false">×</span>
+            <span aria-hidden="false">X</span>
           </button>
         </div>
         <div class="modal-body">
@@ -267,6 +326,9 @@
 
 
   </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 
